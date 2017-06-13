@@ -1,0 +1,22 @@
+
+package meusistema.classes;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+public final class Conectar { 
+	
+	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		
+		throw new CloneNotSupportedException("Só havera um!");
+	}
+
+	private static Conectar self; 
+	
+	private Connection con;
+	
+	

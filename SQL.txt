@@ -1,0 +1,25 @@
+-- Database: "DAO"
+
+-- DROP DATABASE "DAO";
+
+CREATE DATABASE "DAO"
+  WITH OWNER = postgres
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'Portuguese_Brazil.1252'
+       LC_CTYPE = 'Portuguese_Brazil.1252'
+       CONNECTION LIMIT = -1;
+
+
+
+create table Aluno(
+	id_aluno numeric not null,
+	nome varchar(150) not null,
+	telefone varchar(100) not null,
+	endereco varchar(100) not null,
+	primary key(id_aluno)
+);
+
+select * from aluno
+
+insert into aluno (id_aluno, nome,telefone,endereco) values(1,'Giovane F Gottardo', 219800098, 'Avenida Brasil');
